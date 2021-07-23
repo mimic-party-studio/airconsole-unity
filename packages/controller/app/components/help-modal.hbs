@@ -1,0 +1,11 @@
+<div
+  class="modal {{unless @show "out-of-view"}}"
+  id="help-modal"
+  style={{@bgColor}}
+>
+  <div class="modal-content" style={{@color}}>
+    <div class="modal-close" {{on "touchstart" @onClose}}>&times;</div>
+    <h3 class="modal-title">Help</h3>
+    <p class="modal-description" >Game description here</p>
+  </div>
+</div>

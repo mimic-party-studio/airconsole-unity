@@ -1,0 +1,118 @@
+.airconsole-keyboard {
+	background-color: #1f1f1f;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-family: sans-serif
+}
+
+.airconsole-keyboard-layout {
+	max-width: 640px
+}
+
+.airconsole-keyboard-key-label {
+	box-sizing: border-box;
+	border-bottom: 3px solid #2d2d2d;
+	background: #3b3b3b;
+	overflow: hidden
+}
+
+.airconsole-keyboard-key-label-active {
+	background-color: #2669a6;
+	position: relative;
+	top: 3px;
+	border-bottom: 0 solid transparent
+}
+
+.airconsole-keyboard-layout-key-active {
+	background-color: #2669a6
+}
+
+.airconsole-keyboard-carret {
+	background-color: #777;
+	width: 1px
+}
+
+.airconsole-keyboard-key-disabled {
+	color: #3b3b3b
+}
+
+.airconsole-keyboard {
+	padding: 4px 0;
+	-webkit-highlight: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+	text-align: center;
+	display: none
+}
+
+.airconsole-keyboard-key {
+	display: inline-block;
+	position: relative;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.airconsole-keyboard-key-label {
+	padding-top: 13px;
+	padding-bottom: 13px;
+	margin: 4px 4px 0 0;
+	text-align: center;
+	cursor: hand;
+	cursor: pointer
+}
+
+.airconsole-keyboard-row {
+	text-align: center;
+	margin-left: 4px;
+	max-width: 640px
+}
+
+.airconsole-keyboard-layout {
+	display: inline-block;
+	width: 100%
+}
+
+.airconsole-keyboard-carret {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	left: 1px
+}
+
+.airconsole-keyboard-carret-container {
+	position: relative
+}
+
+.airconsole-keyboard-key-html-container {
+	display: inline-block;
+	height: 1em
+}
+
+.airconsole-keyboard-backspace {
+	background-image: url("keyboard-back.png");
+	background-repeat: no-repeat;
+	background-size: 120%;
+	background-position: 50% 50%;
+}
+
+.airconsole-keyboard-shift {
+	background-image: url("keyboard-shift.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+  background-position: 50% 50%;
+  background-size: 175%;
+}
+
+#airconsole_keyboard_display.out-of-view {
+	display: none
+}
+
+#airconsole_keyboard_display {
+	text-align: center;
+	margin-top: 5rem
+}

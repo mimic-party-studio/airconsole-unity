@@ -1,0 +1,62 @@
+<div id="airconsole-controller-app">
+  <h1
+    class="title {{unless this.state.showTitle 'out-of-view'}}"
+    style={{this.state.myColorStyle}}
+  >
+    {{this.state.title}}
+  </h1>
+
+  <p
+    class="message {{unless this.state.message 'out-of-view'}}"
+    style={{this.state.myColorStyle}}
+  >
+    {{this.state.message}}
+  </p>
+
+  <SoundButton
+    @show={{this.state.showSoundButton}}
+    @color={{this.state.myColor}}
+    @onPress={{this.pressSoundButton}}
+  />
+
+  <HelpButton
+    @show={{this.state.showHelpButton}}
+    @color={{this.state.backgroundColor}}
+    @bgColor={{this.state.myColor}}
+    @onPress={{fn this.openCloseHelp true}}
+  />
+
+  <PressAnywhereButton
+    @show={{this.state.showPressAnywhere}}
+    @onPress={{this.pressAnywhere}}
+  />
+
+  <HelpModal
+    @show={{this.state.showHelpModal}}
+    @bgColor={{this.state.myBackgroundStyle}}
+    @color={{this.state.myColorStyle}}
+    @onClose={{fn this.openCloseHelp false}}
+  />
+
+  <Keyboard
+    @show={{this.state.showKeyboard}}
+    @setup={{this.airconsole.setupAirconsoleKeyboard}}
+  />
+
+  <DPad
+    @show={{this.state.showDPad}}
+    @onPress={{this.dpadPress}}
+  />
+
+  <ClickAndDrag
+    @show={{this.state.showClickAndDrag}}
+    @color={{this.state.myColor}}
+    @onInput={{this.clickAndDragInput}}
+  />
+
+  <ListSelect
+    @show={{this.state.showListSelect}}
+    @data={{this.state.listData}}
+    @onSelect={{this.listItemSelected}}
+  />
+</div>
